@@ -9,6 +9,7 @@ class Heart:
         self.scale = scale
         self.size = size
         self.density = self.scale * 10
+        self.selected_color = 1
 
     def draw(self):
         points = []
@@ -19,9 +20,14 @@ class Heart:
             y = 13 * cos(theta) - 5 * cos(2 * theta) - 2 * cos(3 * theta) - cos(4 * theta)
             y = -int(self.scale * y - self.pos[1])
             points.append((x,y))
-        pygame.draw.polygon(self.screen, (255,0, random.randint(0,150)), points)
+        pygame.draw.polygon(self.screen, self.getcolor(), points)
         pygame.draw.polygon(self.screen, (0,0,0), points, 1)
 
     def random(self):
         self.pos = (random.randint(0, self.size[0]), random.randint(0, self.size[1]))
         self.scale = random.randint(5,15)
+        
+    def getcolor(self):
+        if self.selected_color == 1:
+            return (255,0, random.randint(0,150))
+        return (255,0, random.randint(0,150))
