@@ -14,7 +14,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-        screen.fill((0,0,0))
+        screen.fill((255,255,255))
         for heart in hearts:
             heart.random()
             heart.draw()
