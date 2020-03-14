@@ -3,13 +3,15 @@ import random
 from numpy import sin, cos
 
 class Heart:
+
+    selected_color = 1
+
     def __init__(self, screen, pos = (0,0), scale = 1, size = (100,100)):
         self.screen = screen
         self.pos = pos
         self.scale = scale
         self.size = size
         self.density = self.scale * 10
-        self.selected_color = 1
 
     def draw(self):
         points = []
@@ -28,6 +30,6 @@ class Heart:
         self.scale = random.randint(5,15)
         
     def getcolor(self):
-        if self.selected_color == 1:
+        if Heart.selected_color == 1:
             return (255,0, random.randint(0,150))
         return (255,0, random.randint(0,150))
