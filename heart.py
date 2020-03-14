@@ -20,6 +20,7 @@ class Heart:
             y = -int(self.scale * y - self.pos[1])
             points.append((x,y))
         pygame.draw.polygon(self.screen, (255,0,0), points)
+        pygame.draw.polygon(self.screen, (255,255,255), points, 1)
 
     def random(self):
         self.pos = (random.randint(0, self.size[0]), random.randint(0, self.size[1]))
