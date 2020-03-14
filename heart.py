@@ -16,5 +16,5 @@ class Heart:
             x = int(self.scale * x + self.pos[0])
             y = 13 * cos(theta) - 5 * cos(2 * theta) - 2 * cos(3 * theta) - cos(4 * theta)
             y = -int(self.scale * y - self.pos[1])
-            pygame.draw.circle(self.screen, (255,255,255), (x,y), 3)
+            pygame.draw.circle(self.screen, (255,0,0), (x,y), 3)
 
