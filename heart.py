@@ -21,4 +21,4 @@ class Heart:
 
     def random(self):
         self.pos = (random.randint(0, self.size[0]), random.randint(0, self.size[1]))
-        self.size = random.randint(5,15)
+        self.scale = random.randint(5,15)
