@@ -1,4 +1,5 @@
 import pygame
+import random
 from numpy import sin, cos
 
 class Heart:
@@ -18,3 +19,6 @@ class Heart:
             y = -int(self.scale * y - self.pos[1])
             pygame.draw.circle(self.screen, (255,0,0), (x,y), 3)
 
+    def random(self):
+        self.pos = (random.randint(0, self.size[0]), random.randint(0, self.size[1]))
+        self.size = random.randint(5,15)

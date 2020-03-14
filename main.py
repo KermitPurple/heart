@@ -7,6 +7,7 @@ pygame.display.init()
 size = 600,600
 screen = pygame.display.set_mode(size)
 heart = Heart(screen, (size[0]/2, size[1]/2), 10, size)
+heart.random()
 running = True
 pygame.key.set_repeat(40)
 while running:
