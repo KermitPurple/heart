@@ -8,7 +8,7 @@ class Heart:
         self.pos = pos
         self.scale = scale
         self.size = size
-        self.density = self.scale * 50
+        self.density = self.scale * 4
 
     def draw(self):
         points = []
