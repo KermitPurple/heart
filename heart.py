@@ -2,11 +2,11 @@ import pygame
 from numpy import sin, cos
 
 class Heart:
-    def __init__(self, screen, pos, scale, density):
+    def __init__(self, screen, pos, scale):
         self.screen = screen
         self.pos = pos
         self.scale = scale
-        self.density = density
+        self.density = self.scale * 50
 
     def draw(self):
         for i in range(2 * self.density):
