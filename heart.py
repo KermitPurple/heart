@@ -40,5 +40,9 @@ class Heart:
             return random.choice([(255, 33, 142), (255,214,0), (33,176,254)])
         elif Heart.selected_color == 5:
             return random.choice([(90, 207, 250), (245, 171, 186), (255,255,255)])
+        elif Heart.selected_color == 6:
+            color = pygame.Color(255)
+            color.hsva = (random.randint(1,350),100,100)
+            return color
 
         return (255,0, random.randint(0,150))
