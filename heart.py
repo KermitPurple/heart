@@ -33,7 +33,7 @@ class Heart:
         if Heart.selected_color == 1:
             return (255,0, random.randint(0,150))
         elif Heart.selected_color == 2:
-            return random.choice([(255,0,0),(255,90,0), (255,230,0), (43, 255, 0), (0,255,255), (0,0,255), (140,0,255),(225,0,255)])
+            return random.choice([(229,0,0), (255,141,0), (255,238,0), (0, 128, 33), (0,76,255), (118,1,138)])
         elif Heart.selected_color == 3:
             return random.choice([(206,0,103), (156,51,156), (0,51,153)])
         elif Heart.selected_color == 4:
